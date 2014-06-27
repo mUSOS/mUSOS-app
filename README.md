@@ -8,7 +8,7 @@ Budowa projektu
 ====
 1) Pobierz projekt
 ```
-git clonehttps://github.com/mUSOS/mUSOS-app.git
+git clone https://github.com/mUSOS/mUSOS-app.git
 ```
 2) Przejdź do folderu projektu
 ```
