@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="calendar_key"
+        android:title="@string/calendar_pref_name"
+        android:summary="@string/calendar_pref_summary" />
+
+</PreferenceScreen>

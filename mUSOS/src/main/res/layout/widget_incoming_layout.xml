@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/widget_layout"
+              android:layout_width="350dp"
+              android:layout_height="220dp"
+              android:orientation="vertical"
+              android:background="@drawable/widget_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="@string/incoming_reimnder"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:layout_marginRight="3dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="@string/subject_label"/>
+
+    <TextView
+        android:id="@+id/subject_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:text="@string/start_label"/>
+
+    <TextView
+        android:id="@+id/start_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:text="@string/end_label"/>
+
+    <TextView
+        android:id="@+id/end_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:ellipsize="end"/>
+</LinearLayout>

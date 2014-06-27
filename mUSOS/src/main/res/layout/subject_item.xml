@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/card_background"
+                 android:minHeight="50dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="5dp"
+                 android:padding="10dp">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_condensed_regular"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:textColor="#33B5E5"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_type"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_condensed_regular"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:textColor="#33B5E5"/>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+

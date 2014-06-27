@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_background"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/wmi_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            app:typeface="roboto_condensed_regular"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/wmi_title"/>
+
+        <FrameLayout
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/wmi_label"
+            android:layout_marginBottom="10dp"
+            android:layout_height="200dp"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/WmiLabel"
+            android:layout_below="@+id/map_container"
+            android:id="@+id/address_label"
+            app:typeface="roboto_condensed_regular"
+            android:text="@string/wmi_address_label"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/wmi_address"
+            style="@style/WmiContent"
+            app:typeface="roboto_condensed_bold"
+            android:text="@string/wmi_address"
+            android:layout_toRightOf="@+id/email_label"
+            android:layout_alignTop="@+id/address_label"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/phone_label"
+            style="@style/WmiLabel"
+            android:layout_alignLeft="@+id/address_label"
+            android:layout_below="@+id/wmi_address"
+            app:typeface="roboto_condensed_regular"
+            android:text="@string/wmi_phone_label"/>
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/phone_btn"
+            style="@style/WmiContent"
+            app:typeface="roboto_condensed_bold"
+            android:textColor="@color/blue_link"
+            android:text="@string/wmi_phone"
+            android:layout_alignLeft="@+id/wmi_address"
+            android:layout_alignBottom="@+id/phone_label"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/email_label"
+            style="@style/WmiLabel"
+            app:typeface="roboto_condensed_regular"
+            android:text="@string/wmi_email_label"
+            android:layout_alignLeft="@+id/address_label"
+            android:layout_below="@+id/phone_btn"/>
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/email_btn"
+            style="@style/WmiContent"
+            app:typeface="roboto_condensed_bold"
+            android:textColor="@color/blue_link"
+            android:text="@string/wmi_email"
+            android:layout_toRightOf="@+id/email_label"
+            android:layout_alignBottom="@+id/email_label"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="pl.edu.amu.usos">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:allowBackup="true"
+        android:name="com.orm.SugarApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version" />
+    
+        <!-- Provide your API KEY -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="YOUR_API_KEY"/>
+
+        <meta-data android:name="DATABASE" android:value="musos.db" />
+        <meta-data android:name="VERSION" android:value="7" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="pl.edu.amu.usos" />
+
+        <activity android:name="pl.edu.amu.usos.MainActivity"
+                  android:launchMode="singleInstance"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="pl.edu.amu.usos.DASHBOARD_ACTION" />
+                <action android:name="pl.edu.amu.usos.REMINDER_ACTION" />
+                <action android:name="pl.edu.amu.usos.SCHEDULE_ACTION" />
+                <action android:name="pl.edu.amu.usos.SUBJECT_LIST_ACTION" />
+                <action android:name="pl.edu.amu.usos.GROUPS_ACTION" />
+                <action android:name="pl.edu.amu.usos.SEARCH_ACTION" />
+                <action android:name="pl.edu.amu.usos.PREFERENCE_ACTION" />
+                <action android:name="pl.edu.amu.usos.WMI_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="pl.edu.amu.usos.LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity android:name=".CallbackActivity"
+                  android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="musos" android:host="callback"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.NotificationService">
+            <intent-filter>
+                <action android:name="pl.edu.amu.usos.ACTION_SET_ALARM" />
+                <action android:name="pl.edu.amu.usos.ACTION_FIRE_ALARM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".service.NotificationReceiver">
+            <intent-filter>
+                <action android:name="pl.edu.amu.usos.START_ALARM_B" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".widget.IncomingWidget"
+                  android:label="mUSOS - Zajęcia"
+            android:enabled="@bool/is_widget_min" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/incoming_widget" />
+        </receiver>
+
+        <receiver android:name=".widget.ReminderWidget"
+                  android:label="mUSOS - Przypomnij"
+                  android:enabled="@bool/is_widget_min" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/reminder_widget" />
+        </receiver>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="YOUR_CRASHLYTICS_API_KEY"/>
+
+    </application>
+
+</manifest>

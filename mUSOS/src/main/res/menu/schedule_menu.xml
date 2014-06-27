@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pl.edu.amu.usos.MainActivity" >
+
+    <item android:id="@+id/action_sync"
+        android:icon="@drawable/ic_menu_refresh"
+        android:title="@string/sync_title"
+        app:showAsAction="never" />
+
+</menu>

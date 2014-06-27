@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mUSOS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="search_btn_name">Szukaj</string>
+    <string name="search_title_name">Wpisz nazwisko pracownika</string>
+
+    <!--Menu-->
+    <string name="action_search">Szukaj</string>
+
+
+    <!-- Login Activity -->
+    <string name="login_label">mUSOS</string>
+    <string name="login_hint">Adres e-mail</string>
+    <string name="password_hint">Hasło</string>
+    <string name="login_btn_label">Zaloguj się</string>
+
+    <!--Menu-->
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_plan">Plan zajęć</string>
+    <string name="menu_courses">Lista zajęć</string>
+    <string name="menu_add_reminder">Dodaj przypomnienie</string>
+    <string name="menu_payment">Płatości</string>
+    <string name="menu_grades">Oceny</string>
+    <string name="menu_subjects">Przedmioty</string>
+    <string name="menu_groups">Grupy</string>
+    <string name="menu_search">Szukaj</string>
+    <string name="menu_settings">Ustawienia</string>
+    <string name="menu_logout">Wyloguj</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum
+    </string>
+    <string name="session_expired">Twoja sesja wygasła. Zaloguj się ponownie.</string>
+
+    <!-- Reminder Fragment -->
+    <string name="reminder_name">Dodaj przypomnienie</string>
+    <string name="no_classes_info">Brak zajęć!</string>
+    <string name="reminder_label">Przypomnienia</string>
+    <string name="reminder_empty">Brak przypomnień</string>
+    <string name="incoming_reimnder">Najbliższe zajęcia</string>
+    <string name="subject_label">Przedmiot</string>
+    <string name="start_label">Start</string>
+    <string name="end_label">Koniec</string>
+
+    <string name="reminder_hint">Nazwa przypomnienia</string>
+    <string name="reminder_date_label">Przypomnienie: ---</string>
+    <string name="reminder_desc">Opis przypomnienia</string>
+    <string name="reminder_calendar">Dodaj do kalendarza</string>
+    <string name="reminder_save">Zapisz</string>
+
+    <string name="back_button_label">Wstecz</string>
+    <string name="next_button_label">Dalej</string>
+
+    <string name="skip_button_label">Pomiń</string>
+
+    <string name="calendar_pref_name">Synchronizacja z kalendarzem</string>
+    <string name="calendar_pref_summary">Synchronizuj wydarzenia</string>
+    <string name="title_checkbox_preference">Synchronizacja</string>
+    <string name="summary_checkbox_preference">Synchronizuj wydarzenia pomiędzy aplikacją a kalendarzem w telefonie.</string>
+
+    <string name="sync_title">Synchronizacja</string>
+    <string name="sync_msg">Trwa dodwanie zajęć do kalendarza</string>
+    <string name="wmi_title">Wydział Matematyki i Informatyki</string>
+    <string name="menu_wmi">WMI</string>
+
+    <string name="wmi_address_label">Adres:</string>
+    <string name="wmi_address">ul.Umultowska 87 61-614 Poznań</string>
+    <string name="wmi_phone_label">Telefon:</string>
+    <string name="wmi_phone">(0-61) 829-5308</string>
+    <string name="wmi_email_label">E-mail:</string>
+    <string name="wmi_email">wmiuam@amu.edu.pl</string>
+    <string name="send_email">Wyślij wiadomość</string>
+    <string name="make_call">Wybierz akcje</string>
+
+    <string name="connection_error">Wystąpił problem z połączeniem. Spróbuj ponownie później.</string>
+    <string name="back_button_toast">Naciśnij ponownie aby wyjść z aplikacji</string>
+    <string name="widget_reminder">Przypomnienie</string>
+    <string name="widget_title">Tytuł</string>
+    <string name="widget_when">Kiedy</string>
+    <string name="widget_desc">Opis</string>
+
+</resources>

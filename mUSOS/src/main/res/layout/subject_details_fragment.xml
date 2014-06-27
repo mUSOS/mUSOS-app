@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--ScrollView-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:text="Przedmiot:"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectLabel"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_title"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectDetail"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:text="Typ:"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectLabel"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_type"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectDetail"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/SubjectLabel"
+            app:typeface="roboto_condensed_regular"
+            android:text="Start:"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_start"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectDetail"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/SubjectLabel"
+            app:typeface="roboto_condensed_regular"
+            android:text="Czas trwania:"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_duration"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectDetail"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/SubjectLabel"
+            app:typeface="roboto_condensed_regular"
+            android:text="Dzień tygodnia:"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_day"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectDetail"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/SubjectLabel"
+            app:typeface="roboto_condensed_regular"
+            android:text="Częstotliwość:"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_frequency"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectDetail"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/SubjectLabel"
+            app:typeface="roboto_condensed_regular"
+            android:text="Sala:"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_room"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectDetail"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/SubjectLabel"
+            app:typeface="roboto_condensed_regular"
+            android:text="Budynek:"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/subject_building"
+            app:typeface="roboto_condensed_regular"
+            style="@style/SubjectDetail"/>
+
+        <Button
+            android:id="@+id/dismiss_btn"
+            android:layout_marginTop="10dp"
+            android:text="@android:string/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

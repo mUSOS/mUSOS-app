@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/card_background"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/time_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:typeface="roboto_condensed_regular"
+            android:textColor="#ff11121b"
+            android:singleLine="true"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/class_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:typeface="roboto_condensed_regular"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="3" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/class_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_condensed_regular"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+</FrameLayout>
